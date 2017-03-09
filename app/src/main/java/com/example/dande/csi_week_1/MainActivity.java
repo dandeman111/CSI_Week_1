@@ -1,5 +1,4 @@
 package com.example.dande.csi_week_1;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 

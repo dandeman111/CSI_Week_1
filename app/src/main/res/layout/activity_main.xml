@@ -15,44 +15,49 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="107dp"
         app:srcCompat="@drawable/donald_trump"
         android:id="@+id/imageView"
         android:contentDescription="@string/donald_trump_is_een_grote_crimineel"
-        android:layout_weight="1"
-        android:minHeight="300dp" />
+        android:minHeight="200dp"
+        tools:background="@android:color/background_dark" />
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:weightSum="1">
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingTop="20px">
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="@android:color/transparent">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:minHeight="15dp"
-                tools:background="@android:color/darker_gray">
+                android:minHeight="10dp"
+                tools:background="@android:color/darker_gray"
+                android:alpha="1"
+                android:background="@android:color/darker_gray">
 
                 <TextView
                     android:text="Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView"
-                    android:paddingLeft="15dp" />
+                    android:paddingLeft="15dp"
+                    android:fontFamily="monospace" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:text="Name"
                     android:ems="10"
-                    android:id="@+id/editText" />
+                    android:id="@+id/editText"
+                    android:fontFamily="monospace" />
 
             </TableRow>
 
@@ -64,53 +69,61 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:minHeight="15dp"
+                android:minHeight="10dp"
                 android:backgroundTint="@android:color/darker_gray"
-                tools:background="@android:color/darker_gray">
+                tools:background="@android:color/darker_gray"
+                android:background="@android:color/darker_gray">
 
                 <TextView
                     android:text="Gender"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView2"
-                    android:paddingLeft="15dp" />
+                    android:paddingLeft="15dp"
+                    android:fontFamily="monospace" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:text="Name"
                     android:ems="10"
-                    android:id="@+id/editText2" />
+                    android:id="@+id/editText2"
+                    android:fontFamily="monospace"
+                    android:height="10dp" />
 
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:minHeight="10dp" />
+                android:minHeight="10dp" >
+
+            </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:minHeight="15dp"
+                android:minHeight="10dp"
                 android:backgroundTint="@android:color/darker_gray"
-                tools:background="@android:color/darker_gray">
+                tools:background="@android:color/darker_gray"
+                android:background="@android:color/darker_gray">
 
                 <TextView
                     android:text="Age"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView3"
-                    android:paddingLeft="15dp" />
+                    android:paddingLeft="15dp"
+                    android:fontFamily="monospace" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:text="Name"
                     android:ems="10"
-                    android:id="@+id/editText3" />
+                    android:id="@+id/editText3"
+                    android:fontFamily="monospace"
+                    android:height="10dp" />
 
             </TableRow>
 
@@ -124,30 +137,80 @@
                 android:layout_height="match_parent"
                 android:backgroundTint="@android:color/darker_gray"
                 tools:background="@android:color/darker_gray"
-                android:minHeight="15dp">
+                android:minHeight="10dp"
+                android:background="@android:color/darker_gray">
 
                 <TextView
                     android:text="Bounty"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView4"
-                    android:paddingLeft="15dp" />
+                    android:paddingLeft="15dp"
+                    android:fontFamily="monospace" />
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:text="Name"
                     android:ems="10"
-                    android:id="@+id/editText4" />
+                    android:id="@+id/editText4"
+                    android:fontFamily="monospace"
+                    android:height="10dp" />
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"></LinearLayout>
             </TableRow>
 
         </TableLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_weight="0.96"
+            android:background="@android:color/background_dark"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Details"
+                android:layout_width="135dp"
+                android:layout_height="38dp"
+                android:id="@+id/textView5"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:hapticFeedbackEnabled="false"
+                android:textColor="@android:color/holo_green_light"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:typeface="monospace"
+                android:textSize="18sp"
+                android:fontFamily="monospace" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="The breadth of Trump’s controversies is truly yuge, ranging from allegations of mafia ties to unscrupulous business dealings, and from racial discrimination to alleged marital rape. They stretch over more than four decades, from the mid-1970s to the present day. To catalogue the full sweep of allegations would require thousands of words and lump together the trivial with the truly scandalous. Including business deals that have simply failed, without any hint of impropriety, would require thousands more. This is a snapshot of some of the most interesting and largest of those scandals."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:textColor="@android:color/holo_green_light"
+                        android:fontFamily="monospace" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -186,7 +186,8 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="66dp"
+                android:layout_weight="0.28">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -205,10 +206,11 @@
             </ScrollView>
 
             <Button
-                android:text="Button"
-                android:layout_width="match_parent"
+                android:text="Report"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button4" />
+                android:id="@+id/button4"
+                android:layout_gravity="center" />
 
         </LinearLayout>
 
